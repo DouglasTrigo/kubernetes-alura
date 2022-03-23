@@ -1,0 +1,11 @@
+apiVersion: v1
+#Tipo
+kind: Pod
+metadata:
+  name: primeiro-pode-declarativo
+#Especificações
+spec:
+  containers:
+    # O - quer dizer que é o inicio de um container, poderia ter mais de um nests pod
+    - name: nginx-container
+      image: nginx:latest
